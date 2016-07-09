@@ -25,7 +25,7 @@ public class Activity1 extends AppCompatActivity implements View.OnClickListener
         EditText textBoxMessage = (EditText) findViewById(R.id.editText);
         String messageInput = textBoxMessage.getText().toString();
         Intent goToSecond = new Intent();
-        goToSecond.setClass(Activity1.this, MainActivity.class);
+        goToSecond.setClass(Activity1.this, Activity2.class);
         goToSecond.putExtra("message", messageInput);
         startActivity(goToSecond);
     }
